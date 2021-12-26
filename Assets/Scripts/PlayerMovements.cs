@@ -15,16 +15,5 @@ public class PlayerMovements : MonoBehaviour
         _movement = Input.GetAxisRaw(_isPlayerOne ? "Player1" : "Player2");
 
         rb.velocity = new Vector2(rb.velocity.x, _movement * _speed);
-        //if (Input.GetKeyDown(KeyCode.Z))
-        //{
-        //    _direction = Vector2.up;
-        //}
-        //else if (Input.GetKeyDown(KeyCode.S))
-        //{
-        //    _direction = Vector2.down;
-        //}
-
-        //if (_direction == null) return;
-        //this.transform.position = new Vector2(this.transform.position.x + _direction.Value.x / _playerSpeed, this.transform.position.y + _direction.Value.y / _playerSpeed  );
     }
 }
