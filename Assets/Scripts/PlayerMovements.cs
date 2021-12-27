@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerMovements : MonoBehaviour
 {
-    private Vector2? _direction = null;
     [SerializeField] private bool _isPlayerOne;
     [SerializeField] private int _speed = 15;
     [SerializeField] private Rigidbody2D rb;
